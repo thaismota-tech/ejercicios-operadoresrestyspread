@@ -19,3 +19,11 @@ function countTheArgs (...args) {
 }
 console.log(countTheArgs("gato", "perro")); 
 console.log(countTheArgs("gato", "perro", "pollo", "oso"));
+
+// EJERCICIO 4: Escribe una función llamada combineTwoArrays que reciba dos array cómo argumentos y devuelva solo un array que combine los dos (usando spread operator).
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+function combineTwoArrays(array1,array2) {
+    return arr3 = [...array1, ...array2];
+}
+console.log(combineTwoArrays(array1, array2)); 

@@ -43,3 +43,13 @@ return arrays.flat();
 };
 console.log(combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1])); 
 console.log(combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]));
+
+// EJERCICIO 7: Escriba una función llamada sumAndSquare que reciba cualquier número de argumentos, los eleve al cuadrado y devuelva la suma de todos los valores cuadrados.
+function sumAndSquare(...args2) {
+    return args2
+    .map(arg => arg** 2)
+    .reduce((acum, arg) => acum + arg, 0);
+}
+console.log(sumAndSquare(1, 2, 3));    
+console.log(sumAndSquare(4, 5));       
+console.log(sumAndSquare(1, 2, 3, 4));

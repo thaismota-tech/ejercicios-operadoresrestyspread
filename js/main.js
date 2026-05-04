@@ -14,7 +14,7 @@ function addOnlyNums(...numeros2) {
 console.log(addOnlyNums(1, "perro", 2, 4));
 
 // EJERCICIO 3: Escribe una función llamada countTheArgs que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
-function countTheArgs (...args) {
+function countTheArgs(...args) {
     return args.length;
 }
 console.log(countTheArgs("gato", "perro")); 
@@ -27,3 +27,10 @@ function combineTwoArrays(array1,array2) {
     return arr3 = [...array1, ...array2];
 }
 console.log(combineTwoArrays(array1, array2)); 
+
+// EJERCICIO 5: Escriba una función llamada onlyUniques que acepte cualquier número de argumentos y devuelva un array de elementos únicos, sin repetidos.
+function onlyUniques(...param) {
+return [...new Set(param)];
+}
+console.log(onlyUniques("gato", "pollo", "cerdo", "cerdo"));
+console.log(onlyUniques(1, 1, 2, 2, 3, 6, 7, 8));

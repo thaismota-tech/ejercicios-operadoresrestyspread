@@ -11,4 +11,11 @@ function addOnlyNums(...numeros2) {
     .filter(item => typeof item === 'number') //primero filtre para que me quede solamente con números
     .reduce((acum, num) => acum + num, 0);
 }
-console.log(addOnlyNums(1, "perro", 2, 4)); 
+console.log(addOnlyNums(1, "perro", 2, 4));
+
+// EJERCICIO 3: Escribe una función llamada countTheArgs que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
+function countTheArgs (...args) {
+    return args.length;
+}
+console.log(countTheArgs("gato", "perro")); 
+console.log(countTheArgs("gato", "perro", "pollo", "oso"));

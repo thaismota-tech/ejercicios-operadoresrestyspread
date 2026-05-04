@@ -24,7 +24,7 @@ console.log(countTheArgs("gato", "perro", "pollo", "oso"));
 const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 function combineTwoArrays(array1,array2) {
-    return arr3 = [...array1, ...array2];
+    return array3 = [...array1, ...array2];
 }
 console.log(combineTwoArrays(array1, array2)); 
 
@@ -34,3 +34,12 @@ return [...new Set(param)];
 }
 console.log(onlyUniques("gato", "pollo", "cerdo", "cerdo"));
 console.log(onlyUniques(1, 1, 2, 2, 3, 6, 7, 8));
+
+// EJERCICIO 6: Escriba una función llamada combineAllArrays que pueda recibir cualquier cantidad de arrays como argumentos y los combine todos en un solo array.
+combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1]); 
+combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); 
+function combineAllArrays(...arrays) {
+return arrays.flat();
+};
+console.log(combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1])); 
+console.log(combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]));
